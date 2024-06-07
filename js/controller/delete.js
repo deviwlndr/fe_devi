@@ -1,3 +1,9 @@
+function confirmDelete(IDHAPUS) {
+    if (confirm("Apakah ingin menghapus data ID " + IDHAPUS + "?")) {
+        deleteData(IDHAPUS);
+    }
+}
+
 function deleteData(IDHAPUS) {
     var presensiId = IDHAPUS;
     var target_url = "https://ws-deviwlndr-59b3a0157dd7.herokuapp.com/delete/" + presensiId;
